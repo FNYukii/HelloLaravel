@@ -7,6 +7,6 @@
   <title>First</title>
 </head>
 <body>
-  <h1>Hello First Laravel</h1>
+  <h1>Hello. first Laravel project.</h1>
 </body>
 </html>
