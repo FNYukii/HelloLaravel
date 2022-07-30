@@ -13,6 +13,8 @@
 @media (max-width:1150px) {
   .large-container {
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -21,7 +23,7 @@ header {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 1px  #ddd;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 header .logo {
@@ -43,10 +45,6 @@ header ul li a {
   margin-left: 32px;
 }
 
-header ul li .active {
-  color: #000;
-}
-
 header ul li a:hover {
   color: #000;
 }
@@ -55,4 +53,9 @@ header ul li a:hover {
   header ul {
     display: none;
   }
+}
+
+/* Main */
+h1 {
+  margin-top: 16px;
 }
