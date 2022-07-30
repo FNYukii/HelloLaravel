@@ -7,7 +7,11 @@
   <title>First</title>
 </head>
 <body>
+
+  <x-header></x-header>
+
   <h1>Hello</h1>
   <p>This is first Laravel project.</p>
+  
 </body>
 </html>
