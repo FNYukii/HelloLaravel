@@ -10,7 +10,12 @@
 
   <x-header/>
 
-  <h1>Top</h1>
-  
+  <main>
+    <div class="large-container">
+      <h1>Top</h1>
+      <p>This is Top page.</p>
+    </div>
+  </main>
+
 </body>
 </html>
