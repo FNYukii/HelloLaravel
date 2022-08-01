@@ -25,4 +25,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('contact');
 // });
 
-Route::get('/', [\App\Http\Controllers\IndexController::class, 'show']);
+Route::get('/sample', [\App\Http\Controllers\IndexController::class, 'show']);
+
+Route::get('/sample/{id}', [\App\Http\Controllers\IndexController::class, 'showId']);
