@@ -16,7 +16,7 @@ class CommentsSeeder extends Seeder
         //     'updated_at' => now(),
         // ]);
 
-        // Factoryを使用する
+        // 自作したFactoryを使用する
         Comment::factory()->count(10)->create();
     }
 }
