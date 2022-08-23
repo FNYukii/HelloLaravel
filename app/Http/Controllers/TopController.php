@@ -13,7 +13,7 @@ class TopController extends Controller
         // Eloquentモデルから、全データを取得
         $tweets = Comment::orderBy('created_at', 'DESC')->get();
         
-        // Bladeテンプレートに$tweetsを渡して表示
+        // Bladeテンプレートを返す
         return view('Pages.top')
         ->with('tweets', $tweets);
     }
