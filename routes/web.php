@@ -2,17 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', \App\Http\Controllers\TopController::class)
+Route::get('/', \App\Http\Controllers\TopPageController::class)
 ->name('index');
 
 Route::get('/create', function () {
-    return view('Pages.create');
+    return view('Pages.CreatePage');
 });
 
 Route::get('/update/{commentId}', function () {
-    return view('Pages.update');
+    return view('Pages.UpdatePage');
 });
 
 Route::get('/delete/{commentId}', function () {
-    return view('Pages.delete');
+    return view('Pages.DeletePage');
 });
