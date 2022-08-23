@@ -18,9 +18,7 @@
       <form action="{{ route('createComment') }}" method="post">
     
         @csrf
-        <label for="tweet-content">つぶやき</label>
-        <span>10文字まで</span>
-        <textarea id="tweet-content" type="text" name="tweet" placeholder="つぶやきを入力"></textarea>
+        <textarea type="text" name="comment" placeholder="コメント"></textarea>
 
         @error('tweet')
         <p style="color: red;">{{ $message }}</p>
