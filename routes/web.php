@@ -2,17 +2,21 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Top Page
 Route::get('/', \App\Http\Controllers\TopPageController::class)
 ->name('index');
 
+// Create Page
 Route::get('/create', function () {
     return view('Pages.CreatePage');
 });
 
+// Update Page
 Route::get('/update/{commentId}', function () {
     return view('Pages.UpdatePage');
 });
 
+// Delete Page
 Route::get('/delete/{commentId}', function () {
     return view('Pages.DeletePage');
 });
