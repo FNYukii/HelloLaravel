@@ -14,6 +14,10 @@
   <main>
     <div class="large-container">
       <h2>Read</h2>
+
+      @foreach($tweets as $tweet)
+        <p>{{ $tweet->content}}</p>
+      @endforeach
     </div>
   </main>
 
