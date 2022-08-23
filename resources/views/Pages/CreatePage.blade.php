@@ -14,6 +14,20 @@
   <main>
     <div class="large-container">
       <h2>Create</h2>
+
+      <form action="{{ route('createComment') }}" method="post">
+    
+        @csrf
+        <label for="tweet-content">つぶやき</label>
+        <span>10文字まで</span>
+        <textarea id="tweet-content" type="text" name="tweet" placeholder="つぶやきを入力"></textarea>
+
+        @error('tweet')
+        <p style="color: red;">{{ $message }}</p>
+        @enderror
+
+        <button type="submit">投稿</button>
+      </form>
     </div>
   </main>
   

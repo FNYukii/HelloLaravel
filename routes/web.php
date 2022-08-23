@@ -11,6 +11,9 @@ Route::get('/create', function () {
     return view('Pages.CreatePage');
 });
 
+Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
+->name('createComment');
+
 // Update Page
 Route::get('/update/{commentId}', function () {
     return view('Pages.UpdatePage');
