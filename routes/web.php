@@ -2,9 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Pages.top');
-});
+Route::get('/', \App\Http\Controllers\TopController::class)
+->name('index');
 
 Route::get('/create', function () {
     return view('Pages.create');
