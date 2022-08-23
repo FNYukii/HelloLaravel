@@ -3,18 +3,20 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use App\Models\Comment;
 
 class CommentsSeeder extends Seeder
 {
     
     public function run()
     {
-        DB::table('comments')->insert([
-            'content' => Str::random(20),
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
+        // DB::table('comments')->insert([
+        //     'content' => Str::random(20),
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ]);
+
+        // Factoryを使用する
+        Comment::factory()->count(10)->create();
     }
 }
