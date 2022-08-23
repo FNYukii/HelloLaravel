@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Hello Laravel</title>
+  <title>Hello Laravel</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -13,10 +13,9 @@
 
   <main>
     <div class="large-container">
-      <h1>About</h1>
-      <p>This is About page.</p>
+      <h2>Read</h2>
     </div>
   </main>
-  
+
 </body>
 </html>
