@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class UpdateCommentController extends Controller
 {
-    // Todo: 指定されたCommentを編集する
+    public function __invoke(Request $request)
+    {
+        //
+    }
 }
