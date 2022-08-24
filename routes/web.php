@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 // Top Page
 Route::get('/', \App\Http\Controllers\TopPageController::class)
-->name('index');
+->name('topPage');
 
 // Create Page
 Route::get('/create', function () {

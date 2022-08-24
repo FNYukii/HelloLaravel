@@ -18,7 +18,7 @@
       <form action="{{ route('createComment') }}" method="post">
     
         @csrf
-        <textarea type="text" name="comment" placeholder="コメント"></textarea>
+        <textarea type="text" name="content" placeholder="コメント"></textarea>
 
         @error('tweet')
         <p style="color: red;">{{ $message }}</p>
