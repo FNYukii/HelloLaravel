@@ -9,7 +9,8 @@ Route::get('/', \App\Http\Controllers\TopPageController::class)
 // Create Page
 Route::get('/create', function () {
     return view('Pages.CreatePage');
-});
+})
+->name('createPage');
 
 Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
 ->name('createComment');

@@ -20,6 +20,6 @@ class CreateCommentController extends Controller
         $comment->save();
 
         // TODO: CreatePageにリダイレクト
-        return redirect()->route('topPage');
+        return redirect()->route('createPage');
     }
 }
