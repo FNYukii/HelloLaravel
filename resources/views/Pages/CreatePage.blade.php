@@ -19,11 +19,7 @@
     
         @csrf
         <textarea type="text" name="content" placeholder="コメント"></textarea>
-
-        @error('tweet')
-        <p style="color: red;">{{ $message }}</p>
-        @enderror
-
+        
         <button type="submit">投稿</button>
       </form>
     </div>
