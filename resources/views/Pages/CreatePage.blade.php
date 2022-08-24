@@ -14,6 +14,14 @@
   <main>
     <div class="large-container">
       <h2>Create</h2>
+
+      <form action="{{ route('createComment') }}" method="post">
+    
+        @csrf
+        <textarea type="text" name="content" placeholder="コメント"></textarea>
+        
+        <button type="submit">投稿</button>
+      </form>
     </div>
   </main>
   

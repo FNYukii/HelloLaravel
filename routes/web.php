@@ -2,17 +2,25 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', \App\Http\Controllers\TopController::class)
-->name('index');
+// Top Page
+Route::get('/', \App\Http\Controllers\TopPageController::class)
+->name('topPage');
 
+// Create Page
 Route::get('/create', function () {
-    return view('Pages.create');
-});
+    return view('Pages.CreatePage');
+})
+->name('createPage');
 
+Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
+->name('createComment');
+
+// Update Page
 Route::get('/update/{commentId}', function () {
-    return view('Pages.update');
+    return view('Pages.UpdatePage');
 });
 
+// Delete Page
 Route::get('/delete/{commentId}', function () {
-    return view('Pages.delete');
+    return view('Pages.DeletePage');
 });
