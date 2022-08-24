@@ -14,6 +14,7 @@
   <main>
     <div class="large-container">
       <h2>Update</h2>
+      <p>{{ $comment->content }}</p>
     </div>
   </main>
 
