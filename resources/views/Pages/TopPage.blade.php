@@ -15,13 +15,15 @@
     <div class="large-container">
       <h2>Read</h2>
 
-      @foreach($comments as $comment)
-        <div>
-          <span>{{ $comment->content}}</span>
-          <a href="/update/{{ $comment->id }}">Update</a>
-          <a href="/delete/{{ $comment->id }}">Delete</a>
-        </div>
-      @endforeach
+      <div class="comment-card-container">
+        @foreach($comments as $comment)
+          <div class="comment-card">
+            <p>{{ $comment->content}}</p>
+            <a href="/update/{{ $comment->id }}">Update</a>
+            <a href="/delete/{{ $comment->id }}">Delete</a>
+          </div>
+        @endforeach
+      </div>
     </div>
   </main>
 
