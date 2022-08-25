@@ -12,14 +12,14 @@ class UpdateCommentController extends Controller
         // 編集するCommentのIDをUpdateCommentRequestから取得
         $commentId = $request->id();
 
-        // // Eloquentモデルから編集前のCommentを取得
-        // $comment = Comment::where('id', $commentId)->firstOrFail();
+        // Eloquentモデルから編集前のCommentを取得
+        $comment = Comment::where('id', $commentId)->firstOrFail();
 
-        // // Requestから編集後のContentを取得し、編集後のCommentを生成
-        // $comment->content = $request->content();
+        // Requestから編集後のContentを取得し、編集後のCommentを生成
+        $comment->content = $request->content();
 
-        // // 上書き保存
-        // $comment->save();
+        // 上書き保存
+        $comment->save();
 
         // リダイレクトしUpdatePageを返す
         return redirect(route('updatePage', [
