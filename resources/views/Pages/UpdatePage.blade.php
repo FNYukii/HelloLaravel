@@ -14,7 +14,7 @@
   <main>
     <div class="large-container">
       <h2>Update</h2>
-      <p>{{ $comment->content }}</p>
+      <textarea type="text" name="content" placeholder="コメント">{{ $comment->content }}</textarea>
     </div>
   </main>
 
