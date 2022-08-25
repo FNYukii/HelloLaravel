@@ -12,7 +12,7 @@ Laravel 9に入門してみた。データベースのCRUDを簡単に試すア�
 ## 環境構築
 1. MySQLにデータベースを作成する
     ```
-    mysql -u root -p
+    $ mysql -u root -p
     Enter password: secret
     mysql> create database HelloLaravel;
     ```
@@ -33,10 +33,10 @@ Laravel 9に入門してみた。データベースのCRUDを簡単に試すア�
 
 1. Migrationを実行し、必要なテーブルを作成する
     ```
-    php artisan migrate
+    $ php artisan migrate
     ```
 
 1. テストデータを入れたいならSeedingを実行する(任意)
     ```
-    php artisan db:seed
+    $ php artisan db:seed
     ```
