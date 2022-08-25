@@ -21,7 +21,7 @@ class UpdateCommentRequest extends FormRequest
     // Comment column values
     public function id(): int
     {
-        return (int) $this->route('tweetId');
+        return (int) $this->route('commentId');
     }
 
     public function content(): string

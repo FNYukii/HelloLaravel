@@ -14,7 +14,13 @@
   <main>
     <div class="large-container">
       <h2>Update</h2>
-      <textarea type="text" name="content" placeholder="コメント">{{ $comment->content }}</textarea>
+
+      <form action="{{ route('updateComment', ['commentId' => $comment->id]) }}" method="post">
+        @csrf
+        <textarea type="text" name="content" placeholder="コメント">{{ $comment->content }}</textarea>
+
+        <button type="submit">投稿</button>
+      </form>
     </div>
   </main>
 
