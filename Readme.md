@@ -10,14 +10,16 @@ Laravel 9に入門してみた。データベースのCRUDを簡単に試すア�
 - MySQL 8.0.30
 
 ## 環境構築
-1. MySQLにデータベースを作成する
+1. PHP・Laravel・MySQLを利用できる環境を用意する
+
+2. MySQLにデータベースを作成する
     ```
     $ mysql -u root -p
     Enter password: secret
     mysql> create database HelloLaravel;
     ```
 
-1. `/.env`ファイルを編集する
+3. `/.env`ファイルを編集する
     ```
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
@@ -31,12 +33,12 @@ Laravel 9に入門してみた。データベースのCRUDを簡単に試すア�
     $ php artisan cache:clear
     ```
 
-1. Migrationを実行し、必要なテーブルを作成する
+4. Migrationを実行し、必要なテーブルを作成する
     ```
     $ php artisan migrate
     ```
 
-1. テストデータを入れたいならSeedingを実行する(任意)
+5. テストデータを入れたいならSeedingを実行する(任意)
     ```
     $ php artisan db:seed
     ```
