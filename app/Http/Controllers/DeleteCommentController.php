@@ -12,9 +12,7 @@ class DeleteCommentController extends Controller
     {
         // RequestからcommentIdを取得
         $commentId = $request->id();
-
-        dd($commentId);
-
+        
         // Commentを削除
         Comment::destroy($commentId);
 
