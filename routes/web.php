@@ -24,6 +24,9 @@ Route::post('/updateComment', \App\Http\Controllers\UpdateCommentController::cla
 ->name('updateComment');
 
 // Delete Page
-Route::get('/delete/{commentId}', function () {
-    return view('Pages.DeletePage');
-});
+Route::get('/delete/{commentId}', \App\Http\Controllers\DeletePageController::class)
+->name('deletePage')
+->where('commentId', '[0-9]+');
+
+Route::post('/deleteComment', \App\Http\Controllers\DeleteCommentController::class)
+->name('deleteComment');

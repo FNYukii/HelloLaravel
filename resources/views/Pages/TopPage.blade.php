@@ -19,6 +19,7 @@
         <div>
           <span>{{ $comment->content}}</span>
           <a href="/update/{{ $comment->id }}">Update</a>
+          <a href="/delete/{{ $comment->id }}">Delete</a>
         </div>
       @endforeach
     </div>
