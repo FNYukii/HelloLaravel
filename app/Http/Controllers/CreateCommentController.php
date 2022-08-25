@@ -13,13 +13,13 @@ class CreateCommentController extends Controller
         // Commentオブジェクトを生成
         $comment = new Comment;
 
-        // TODO: HTTPリクエストのパラメータからCommentの内容を取得
+        // HTTPリクエストのパラメータからCommentの内容を取得
         $comment->content = $request->content();
 
-        // TODO: 新規Commentをデータベースに保存
+        // 新規Commentをデータベースに保存
         $comment->save();
 
-        // TODO: CreatePageにリダイレクト
+        // CreatePageにリダイレクト
         return redirect()->route('createPage');
     }
 }
