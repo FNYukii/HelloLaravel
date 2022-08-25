@@ -21,11 +21,12 @@ class UpdateCommentRequest extends FormRequest
     // Comment column values
     public function id(): int
     {
-        return (int) $this->route('commentId');
+        // return (int) $this->route('commentId');
+        return $this->input('id');
     }
 
     public function content(): string
     {
-        return $this->input('content'); // HTTPリクエストパラメータを返す
+        return $this->input('content');
     }
 }

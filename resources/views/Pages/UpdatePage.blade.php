@@ -15,8 +15,9 @@
     <div class="large-container">
       <h2>Update</h2>
 
-      <form action="{{ route('updateComment', ['commentId' => $comment->id]) }}" method="post">
+      <form action="{{ route('updateComment') }}" method="post">
         @csrf
+        <input name="id" value="{{ $comment->id }}" type="hidden">
         <textarea type="text" name="content" placeholder="コメント">{{ $comment->content }}</textarea>
 
         <button type="submit">投稿</button>

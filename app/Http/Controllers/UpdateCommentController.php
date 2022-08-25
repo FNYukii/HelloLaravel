@@ -22,6 +22,8 @@ class UpdateCommentController extends Controller
         // $comment->save();
 
         // リダイレクトしUpdatePageを返す
-        return redirect('/update/{$commentId}');
+        return redirect(route('updatePage', [
+            'commentId' => $commentId
+        ]));
     }
 }
