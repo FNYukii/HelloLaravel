@@ -59,3 +59,27 @@ header ul li a:hover {
 h2 {
   margin-top: 16px;
 }
+
+textarea {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: medium;
+  font-family : inherit;
+}
+
+button {
+  display: block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
