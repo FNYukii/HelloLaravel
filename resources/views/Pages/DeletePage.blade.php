@@ -14,7 +14,13 @@
   <main>
     <div class="large-container">
       <h2>Delete</h2>
+
       <p>{{ $comment->content }}</p>
+
+      <form action="{{ route('deleteComment') }}" method="post">
+        <input name="id" value="{{ $comment->id }}" type="hidden">
+        <button type="submit">削除</button>
+      </form>
     </div>
   </main>
 
