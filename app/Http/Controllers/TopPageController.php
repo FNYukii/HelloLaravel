@@ -10,10 +10,10 @@ class TopPageController extends Controller
     public function __invoke(Request $request)
     {
         // Eloquentモデルから、全データを取得
-        $tweets = Comment::orderBy('created_at', 'DESC')->get();
+        $comments = Comment::orderBy('created_at', 'DESC')->get();
         
         // Bladeテンプレートを返す
         return view('Pages.TopPage')
-        ->with('tweets', $tweets);
+        ->with('comments', $comments);
     }
 }
