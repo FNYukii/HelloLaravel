@@ -16,9 +16,12 @@ Route::post('/createComment', \App\Http\Controllers\CreateCommentController::cla
 ->name('createComment');
 
 // Update Page
-Route::get('/update/{commentId}', function () {
-    return view('Pages.UpdatePage');
-});
+Route::get('/update/{commentId}', \App\Http\Controllers\UpdatePageController::class)
+->name('updatePage')
+->where('commentId', '[0-9]+');
+
+Route::post('/updateComment', \App\Http\Controllers\UpdateCommentController::class)
+->name('updateComment');
 
 // Delete Page
 Route::get('/delete/{commentId}', function () {

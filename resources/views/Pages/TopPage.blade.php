@@ -15,8 +15,11 @@
     <div class="large-container">
       <h2>Read</h2>
 
-      @foreach($tweets as $tweet)
-        <p>{{ $tweet->content}}</p>
+      @foreach($comments as $comment)
+        <div>
+          <span>{{ $comment->content}}</span>
+          <a href="/update/{{ $comment->id }}">Update</a>
+        </div>
       @endforeach
     </div>
   </main>
