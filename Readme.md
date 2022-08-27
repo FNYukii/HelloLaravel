@@ -19,7 +19,7 @@ Laravel 9に入門してみた。データベースのCRUDを簡単に試すア�
     mysql> create database HelloLaravel;
     ```
 
-3. `/.env`ファイルを編集する
+3. `.env`ファイルを編集する
     ```
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
