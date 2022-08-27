@@ -15,7 +15,7 @@ Laravel 9に入門してみた。データベースのCRUDを簡単に試すア�
 2. MySQLにデータベースを作成する
     ```
     $ mysql -u root -p
-    Enter password: secret
+    Enter password:
     mysql> create database HelloLaravel;
     ```
 
