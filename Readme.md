@@ -1,4 +1,4 @@
-# HelloLaravel
+# Hello Laravel
 
 ## 概要
 Laravel 9に入門してみた。データベースのCRUDを簡単に試すアプリ。
