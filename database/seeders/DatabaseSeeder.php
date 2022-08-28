@@ -9,6 +9,9 @@ class DatabaseSeeder extends Seeder
     
     public function run()
     {
-        $this->call([CommentsSeeder::class]);
+        $this->call([
+            UsersSeeder::class,
+            CommentsSeeder::class
+        ]);
     }
 }

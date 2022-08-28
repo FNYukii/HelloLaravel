@@ -19,6 +19,7 @@
         @foreach($comments as $comment)
           <div class="comment-card">
             <p>{{ $comment->content}}</p>
+            <p class="user-name">{{ $comment->user->name }}</p>
             <a href="/update/{{ $comment->id }}">Update</a>
             <a href="/delete/{{ $comment->id }}">Delete</a>
           </div>

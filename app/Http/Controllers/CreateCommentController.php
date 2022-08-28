@@ -13,7 +13,8 @@ class CreateCommentController extends Controller
         // Commentオブジェクトを生成
         $comment = new Comment;
 
-        // HTTPリクエストのパラメータからCommentの内容を取得
+        // Commentの各プロパティに値を格納
+        $comment->user_id = $request->userId();
         $comment->content = $request->content();
 
         // 新規Commentをデータベースに保存
