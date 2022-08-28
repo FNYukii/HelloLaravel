@@ -19,7 +19,7 @@
         @csrf
         <textarea type="text" name="content" placeholder="コメント"></textarea>
         
-        <button type="submit">投稿</button>
+        <button class="submit-button" type="submit">投稿</button>
       </form>
     </div>
   </main>

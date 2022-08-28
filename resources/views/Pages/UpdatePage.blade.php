@@ -20,7 +20,7 @@
         <input name="id" value="{{ $comment->id }}" type="hidden">
         <textarea type="text" name="content" placeholder="コメント">{{ $comment->content }}</textarea>
 
-        <button type="submit">投稿</button>
+        <button class="submit-button" type="submit">投稿</button>
       </form>
     </div>
   </main>
