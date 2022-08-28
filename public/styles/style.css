@@ -97,6 +97,10 @@ button:hover {
   border: 1px solid #ccc;
 }
 
+.comment-card .user-name {
+    color: #777;
+}
+
 .comment-card a {
   color: #777;
   text-decoration: none;
