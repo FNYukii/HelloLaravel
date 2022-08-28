@@ -34,6 +34,7 @@ Route::get('/create', function () {
 ->name('createPage');
 
 Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
+->middleware('auth')
 ->name('createComment');
 
 // Update Page
