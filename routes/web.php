@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -22,3 +22,32 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+// Top Page
+Route::get('/', \App\Http\Controllers\TopPageController::class)
+->name('topPage');
+
+// Create Page
+Route::get('/create', function () {
+    return view('Pages.CreatePage');
+})
+->name('createPage');
+
+Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
+->name('createComment');
+
+// Update Page
+Route::get('/update/{commentId}', \App\Http\Controllers\UpdatePageController::class)
+->name('updatePage')
+->where('commentId', '[0-9]+');
+
+Route::post('/updateComment', \App\Http\Controllers\UpdateCommentController::class)
+->name('updateComment');
+
+// Delete Page
+Route::get('/delete/{commentId}', \App\Http\Controllers\DeletePageController::class)
+->name('deletePage')
+->where('commentId', '[0-9]+');
+
+Route::post('/deleteComment', \App\Http\Controllers\DeleteCommentController::class)
+->name('deleteComment');
